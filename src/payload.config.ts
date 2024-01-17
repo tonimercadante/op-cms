@@ -11,6 +11,7 @@ import { News } from "./collections/News";
 import { Media } from "./collections/Media";
 import { Installations } from "./collections/Installations";
 import { Containers } from "./collections/Containers";
+import { Services } from "./collections/Services";
 
 export default buildConfig({
   admin: {
@@ -18,7 +19,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, News, Media, Installations, Containers],
+  collections: [Users, News, Media, Installations, Containers, Services],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },

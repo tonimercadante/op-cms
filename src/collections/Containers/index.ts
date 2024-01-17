@@ -21,15 +21,15 @@ export const Containers: CollectionConfig = {
       name: "relations",
       type: "array",
       required: true,
-      minRows: 2,
-      maxRows: 10,
+      minRows: 3,
+      maxRows: 3,
       interfaceName: "Slider",
       fields: [
         {
           type: "relationship",
           name: "relation",
           label: "Categories To Show",
-          relationTo: ["installations", "news"],
+          relationTo: ["installations", "services"],
           hasMany: false,
         },
       ],
